@@ -1,15 +1,55 @@
 <!DOCTYPE html>
-<html style="min-height: 100vh;">
+<html>
 	<head>
 		<title>The Varones</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<style>
+			html, body {
+				margin: 0;
+				padding: 0;
+				min-height: 100vh;
+				min-width: 100vw;
+			}
+			
+			body {
+				background-color: #2f363d;
+				background-image: url('background.jpg');
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				color: #ffffff;
+				font-family: Pacifico, cursive, sans-serif;
+				text-align: center;
+			}
+			
+			h1 {
+				font-size: 115px;
+				text-shadow:
+				-1px -1px 0 #000,
+				1px -1px 0 #000,
+				-1px 1px 0 #000,
+				1px 1px 0 #000;
+			}
+			
+			@media screen and (max-width: 767px) {
+				h1 {
+					font-size: 15vw;
+				}
+			}
+			
+			.container {
+				background-color: rgba(47, 54, 61, 0.75);
+				min-height: 100vh; 
+				display: flex; 
+				justify-content: center; 
+				align-items: center;
+			}
+		</style>
 	</head>
-	<body style="margin: 0; padding: 0; min-width: 100%; min-height: 100vh; background-color: #2f363d; color: #ffffff; font-size: 250%; font-family: Pacifico, cursive; text-align: center;">
-		<div style="min-width: 100%; min-height: 100vh; display: flex; justify-content: center; align-items: center;">
-			<div>
-				<h1>Welcome.</h1>
-			</div>
+	<body>
+		<div class="container">
+			<h1>Welcome.</h1>
 		</div>
 	</body>
 </html>
